@@ -8,17 +8,17 @@
 		<key>logo</key>
 		<string>1.png</string>
 	</dict>
-    <dict>
-        <key>title</key>
-        <string>第二个</string>
-        <key>logo</key>
-        <string>2.png</string>
-    </dict>
-    <dict>
-        <key>title</key>
-        <string>第三个</string>
-        <key>logo</key>
-        <string>3.png</string>
-    </dict>
+	<dict>
+		<key>title</key>
+		<string>第二个</string>
+		<key>logo</key>
+		<string>2.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>UI</string>
+		<key>logo</key>
+		<string>3.png</string>
+	</dict>
 </array>
 </plist>

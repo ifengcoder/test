@@ -30,6 +30,9 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "KCMainViewController.h"
+
+#import "UICommonListViewController.h"//UI tableview
 static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewControllerCellReuseId";
 
 
@@ -167,7 +170,9 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
             break;
         }
         case 2:{
-            ThirdViewController * three = [[ThirdViewController alloc] init];
+//            ThirdViewController * three = [[ThirdViewController alloc] init];
+//            KCMainViewController * three = [[KCMainViewController alloc] init];
+            UICommonListViewController *three  = [[UICommonListViewController alloc] init];
             [self.drawer replaceCenterViewControllerWithViewController:three];
             break;
             break;

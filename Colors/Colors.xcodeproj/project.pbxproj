@@ -13,8 +13,6 @@
 		5F0B651418A3A78800DFB3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B651218A3A78800DFB3C1 /* InfoPlist.strings */; };
 		5F0B651618A3A78800DFB3C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B651518A3A78800DFB3C1 /* main.m */; };
 		5F0B651A18A3A78800DFB3C1 /* ICSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B651918A3A78800DFB3C1 /* ICSAppDelegate.m */; };
-		5F0B653D18A3A82300DFB3C1 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B653A18A3A82300DFB3C1 /* ICSDrawerController.m */; };
-		5F0B653E18A3A82300DFB3C1 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B653C18A3A82300DFB3C1 /* ICSDropShadowView.m */; };
 		5F0B654718A3AD1C00DFB3C1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654618A3AD1C00DFB3C1 /* MenuViewController.m */; };
 		5F0B654A18A3E2C600DFB3C1 /* ICSPlainColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */; };
 		5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B654D18A3F09800DFB3C1 /* Images.xcassets */; };
@@ -27,6 +25,21 @@
 		B264B5B51B3022E60099E1F6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B41B3022E60099E1F6 /* FirstViewController.m */; };
 		B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B71B3022FF0099E1F6 /* SecondViewController.m */; };
 		B264B5BB1B30230F0099E1F6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */; };
+		B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5AB1B310FDE00C55686 /* KCContact.m */; };
+		B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5AE1B3110C100C55686 /* KCContactGroup.m */; };
+		B2D5A5B21B31125200C55686 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5B11B31125200C55686 /* KCMainViewController.m */; };
+		B2D5A5BF1B311BFF00C55686 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5BC1B311BFF00C55686 /* ICSDrawerController.m */; };
+		B2D5A5C01B311BFF00C55686 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5BE1B311BFF00C55686 /* ICSDropShadowView.m */; };
+		B2D5A5C51B313FDE00C55686 /* UICommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5C41B313FDE00C55686 /* UICommonListViewController.m */; };
+		B2D5A5C81B31401100C55686 /* UICommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5C71B31401100C55686 /* UICommonModel.m */; };
+		B2D5A5CB1B31403000C55686 /* UICommonListGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5CA1B31403000C55686 /* UICommonListGroup.m */; };
+		B2D5A5CF1B31646A00C55686 /* KCStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5CE1B31646A00C55686 /* KCStatus.m */; };
+		B2D5A5D21B3165A600C55686 /* KCStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5D11B3165A600C55686 /* KCStatusTableViewCell.m */; };
+		B2D5A5D51B31688500C55686 /* KCStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5D41B31688500C55686 /* KCStatusViewController.m */; };
+		B2D5A5D71B31697A00C55686 /* StatusInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D5A5D61B31697A00C55686 /* StatusInfo.plist */; };
+		B2D5A5DA1B3174E300C55686 /* ToolBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5D91B3174E300C55686 /* ToolBarTableViewController.m */; };
+		B2D5A5DD1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5DC1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m */; };
+		B2D5A5E01B317E0400C55686 /* KCContactSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5DF1B317E0400C55686 /* KCContactSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +53,8 @@
 		5F0B651718A3A78800DFB3C1 /* Colors-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colors-Prefix.pch"; sourceTree = "<group>"; };
 		5F0B651818A3A78800DFB3C1 /* ICSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICSAppDelegate.h; sourceTree = "<group>"; };
 		5F0B651918A3A78800DFB3C1 /* ICSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICSAppDelegate.m; sourceTree = "<group>"; };
-		5F0B653918A3A82300DFB3C1 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
-		5F0B653A18A3A82300DFB3C1 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
-		5F0B653B18A3A82300DFB3C1 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
-		5F0B653C18A3A82300DFB3C1 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
-		5F0B654518A3AD1C00DFB3C1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		5F0B654618A3AD1C00DFB3C1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		5F0B654518A3AD1C00DFB3C1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Colors/MenuViewController.h; sourceTree = SOURCE_ROOT; };
+		5F0B654618A3AD1C00DFB3C1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Colors/MenuViewController.m; sourceTree = SOURCE_ROOT; };
 		5F0B654818A3E2C600DFB3C1 /* ICSPlainColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSPlainColorViewController.h; sourceTree = "<group>"; };
 		5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSPlainColorViewController.m; sourceTree = "<group>"; };
 		5F0B654D18A3F09800DFB3C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -64,6 +73,35 @@
 		B264B5B71B3022FF0099E1F6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B264B5B91B30230F0099E1F6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B2D5A5AA1B310FDE00C55686 /* KCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContact.h; sourceTree = "<group>"; };
+		B2D5A5AB1B310FDE00C55686 /* KCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContact.m; sourceTree = "<group>"; };
+		B2D5A5AD1B3110C100C55686 /* KCContactGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContactGroup.h; sourceTree = "<group>"; };
+		B2D5A5AE1B3110C100C55686 /* KCContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContactGroup.m; sourceTree = "<group>"; };
+		B2D5A5B01B31125200C55686 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		B2D5A5B11B31125200C55686 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
+		B2D5A5BB1B311BFF00C55686 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
+		B2D5A5BC1B311BFF00C55686 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
+		B2D5A5BD1B311BFF00C55686 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		B2D5A5BE1B311BFF00C55686 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		B2D5A5C31B313FDE00C55686 /* UICommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICommonListViewController.h; sourceTree = "<group>"; };
+		B2D5A5C41B313FDE00C55686 /* UICommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICommonListViewController.m; sourceTree = "<group>"; };
+		B2D5A5C61B31401100C55686 /* UICommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICommonModel.h; sourceTree = "<group>"; };
+		B2D5A5C71B31401100C55686 /* UICommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICommonModel.m; sourceTree = "<group>"; };
+		B2D5A5C91B31403000C55686 /* UICommonListGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICommonListGroup.h; sourceTree = "<group>"; };
+		B2D5A5CA1B31403000C55686 /* UICommonListGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICommonListGroup.m; sourceTree = "<group>"; };
+		B2D5A5CD1B31646A00C55686 /* KCStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCStatus.h; sourceTree = "<group>"; };
+		B2D5A5CE1B31646A00C55686 /* KCStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCStatus.m; sourceTree = "<group>"; };
+		B2D5A5D01B3165A600C55686 /* KCStatusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCStatusTableViewCell.h; sourceTree = "<group>"; };
+		B2D5A5D11B3165A600C55686 /* KCStatusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCStatusTableViewCell.m; sourceTree = "<group>"; };
+		B2D5A5D31B31688500C55686 /* KCStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCStatusViewController.h; sourceTree = "<group>"; };
+		B2D5A5D41B31688500C55686 /* KCStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCStatusViewController.m; sourceTree = "<group>"; };
+		B2D5A5D61B31697A00C55686 /* StatusInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StatusInfo.plist; sourceTree = "<group>"; };
+		B2D5A5D81B3174E300C55686 /* ToolBarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBarTableViewController.h; sourceTree = "<group>"; };
+		B2D5A5D91B3174E300C55686 /* ToolBarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBarTableViewController.m; sourceTree = "<group>"; };
+		B2D5A5DB1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContactTableViewControllerWithUISearchDisplayControler.h; sourceTree = "<group>"; };
+		B2D5A5DC1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContactTableViewControllerWithUISearchDisplayControler.m; sourceTree = "<group>"; };
+		B2D5A5DE1B317E0400C55686 /* KCContactSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContactSearchViewController.h; sourceTree = "<group>"; };
+		B2D5A5DF1B317E0400C55686 /* KCContactSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContactSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +148,10 @@
 		5F0B650F18A3A78800DFB3C1 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				B264B5A91B300A6E0099E1F6 /* model */,
+				B2D5A5C21B313E6A00C55686 /* Menu */,
+				B2D5A5C11B313E0800C55686 /* UIDemo */,
 				5F0B651818A3A78800DFB3C1 /* ICSAppDelegate.h */,
 				5F0B651918A3A78800DFB3C1 /* ICSAppDelegate.m */,
-				5F0B654518A3AD1C00DFB3C1 /* MenuViewController.h */,
-				5F0B654618A3AD1C00DFB3C1 /* MenuViewController.m */,
 				5F0B654818A3E2C600DFB3C1 /* ICSPlainColorViewController.h */,
 				5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */,
 				5F0B653818A3A82300DFB3C1 /* ICSDrawerController */,
@@ -139,6 +176,7 @@
 		5F0B651018A3A78800DFB3C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2D5A5D61B31697A00C55686 /* StatusInfo.plist */,
 				5F0B651118A3A78800DFB3C1 /* Colors-Info.plist */,
 				5F0B651218A3A78800DFB3C1 /* InfoPlist.strings */,
 				5F0B651518A3A78800DFB3C1 /* main.m */,
@@ -151,13 +189,12 @@
 		5F0B653818A3A82300DFB3C1 /* ICSDrawerController */ = {
 			isa = PBXGroup;
 			children = (
-				5F0B653918A3A82300DFB3C1 /* ICSDrawerController.h */,
-				5F0B653A18A3A82300DFB3C1 /* ICSDrawerController.m */,
-				5F0B653B18A3A82300DFB3C1 /* ICSDropShadowView.h */,
-				5F0B653C18A3A82300DFB3C1 /* ICSDropShadowView.m */,
+				B2D5A5BB1B311BFF00C55686 /* ICSDrawerController.h */,
+				B2D5A5BC1B311BFF00C55686 /* ICSDrawerController.m */,
+				B2D5A5BD1B311BFF00C55686 /* ICSDropShadowView.h */,
+				B2D5A5BE1B311BFF00C55686 /* ICSDropShadowView.m */,
 			);
-			name = ICSDrawerController;
-			path = ../../ICSDrawerController;
+			path = ICSDrawerController;
 			sourceTree = "<group>";
 		};
 		B264B5A91B300A6E0099E1F6 /* model */ = {
@@ -166,7 +203,66 @@
 				B264B5AA1B300AB60099E1F6 /* MenuModel.h */,
 				B264B5AB1B300AB60099E1F6 /* MenuModel.m */,
 			);
-			path = model;
+			name = model;
+			path = ../model;
+			sourceTree = "<group>";
+		};
+		B2D5A5A91B310F1000C55686 /* lianxirenguanli */ = {
+			isa = PBXGroup;
+			children = (
+				B2D5A5AA1B310FDE00C55686 /* KCContact.h */,
+				B2D5A5AB1B310FDE00C55686 /* KCContact.m */,
+				B2D5A5AD1B3110C100C55686 /* KCContactGroup.h */,
+				B2D5A5AE1B3110C100C55686 /* KCContactGroup.m */,
+				B2D5A5B01B31125200C55686 /* KCMainViewController.h */,
+				B2D5A5B11B31125200C55686 /* KCMainViewController.m */,
+				B2D5A5D81B3174E300C55686 /* ToolBarTableViewController.h */,
+				B2D5A5D91B3174E300C55686 /* ToolBarTableViewController.m */,
+				B2D5A5DB1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.h */,
+				B2D5A5DC1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m */,
+				B2D5A5DE1B317E0400C55686 /* KCContactSearchViewController.h */,
+				B2D5A5DF1B317E0400C55686 /* KCContactSearchViewController.m */,
+			);
+			name = lianxirenguanli;
+			path = ../lianxirenguanli;
+			sourceTree = "<group>";
+		};
+		B2D5A5C11B313E0800C55686 /* UIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B2D5A5CC1B31642F00C55686 /* sinademo1 */,
+				B2D5A5A91B310F1000C55686 /* lianxirenguanli */,
+				B2D5A5C31B313FDE00C55686 /* UICommonListViewController.h */,
+				B2D5A5C41B313FDE00C55686 /* UICommonListViewController.m */,
+				B2D5A5C61B31401100C55686 /* UICommonModel.h */,
+				B2D5A5C71B31401100C55686 /* UICommonModel.m */,
+				B2D5A5C91B31403000C55686 /* UICommonListGroup.h */,
+				B2D5A5CA1B31403000C55686 /* UICommonListGroup.m */,
+			);
+			path = UIDemo;
+			sourceTree = "<group>";
+		};
+		B2D5A5C21B313E6A00C55686 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B264B5A91B300A6E0099E1F6 /* model */,
+				5F0B654618A3AD1C00DFB3C1 /* MenuViewController.m */,
+				5F0B654518A3AD1C00DFB3C1 /* MenuViewController.h */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B2D5A5CC1B31642F00C55686 /* sinademo1 */ = {
+			isa = PBXGroup;
+			children = (
+				B2D5A5CD1B31646A00C55686 /* KCStatus.h */,
+				B2D5A5CE1B31646A00C55686 /* KCStatus.m */,
+				B2D5A5D01B3165A600C55686 /* KCStatusTableViewCell.h */,
+				B2D5A5D11B3165A600C55686 /* KCStatusTableViewCell.m */,
+				B2D5A5D31B31688500C55686 /* KCStatusViewController.h */,
+				B2D5A5D41B31688500C55686 /* KCStatusViewController.m */,
+			);
+			path = sinademo1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +319,7 @@
 			files = (
 				B264B5B11B301E370099E1F6 /* 1.png in Resources */,
 				B264B5AE1B3018CF0099E1F6 /* MenuList.plist in Resources */,
+				B2D5A5D71B31697A00C55686 /* StatusInfo.plist in Resources */,
 				5F0B651418A3A78800DFB3C1 /* InfoPlist.strings in Resources */,
 				5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */,
 				B264B5B21B301E370099E1F6 /* 2.png in Resources */,
@@ -236,18 +333,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D5A5C81B31401100C55686 /* UICommonModel.m in Sources */,
 				5F0B654718A3AD1C00DFB3C1 /* MenuViewController.m in Sources */,
+				B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */,
+				B2D5A5D21B3165A600C55686 /* KCStatusTableViewCell.m in Sources */,
+				B2D5A5B21B31125200C55686 /* KCMainViewController.m in Sources */,
 				B264B5A51B2FFCD30099E1F6 /* RootViewController.m in Sources */,
 				B264B5BB1B30230F0099E1F6 /* ThirdViewController.m in Sources */,
 				5F0B654A18A3E2C600DFB3C1 /* ICSPlainColorViewController.m in Sources */,
 				5F0B651A18A3A78800DFB3C1 /* ICSAppDelegate.m in Sources */,
 				B264B5AC1B300AB60099E1F6 /* MenuModel.m in Sources */,
-				5F0B653D18A3A82300DFB3C1 /* ICSDrawerController.m in Sources */,
 				5F0B651618A3A78800DFB3C1 /* main.m in Sources */,
+				B2D5A5C51B313FDE00C55686 /* UICommonListViewController.m in Sources */,
+				B2D5A5C01B311BFF00C55686 /* ICSDropShadowView.m in Sources */,
 				B264B5B51B3022E60099E1F6 /* FirstViewController.m in Sources */,
+				B2D5A5DD1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m in Sources */,
+				B2D5A5CF1B31646A00C55686 /* KCStatus.m in Sources */,
+				B2D5A5DA1B3174E300C55686 /* ToolBarTableViewController.m in Sources */,
+				B2D5A5E01B317E0400C55686 /* KCContactSearchViewController.m in Sources */,
+				B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */,
+				B2D5A5CB1B31403000C55686 /* UICommonListGroup.m in Sources */,
+				B2D5A5D51B31688500C55686 /* KCStatusViewController.m in Sources */,
 				B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */,
+				B2D5A5BF1B311BFF00C55686 /* ICSDrawerController.m in Sources */,
 				B264B5A81B3005CD0099E1F6 /* MenuTableViewCell.m in Sources */,
-				5F0B653E18A3A82300DFB3C1 /* ICSDropShadowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
