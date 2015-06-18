@@ -87,7 +87,7 @@
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text=[contact getName];
+//    cell.textLabel.text=[contact getName];
     cell.detailTextLabel.text=contact.phoneNumber;
     
     return cell;
@@ -209,6 +209,23 @@
     //刷新表格
     //[self.tableView reloadData];
 }
+//如果想设置 cancelbutton的字体
+//-(void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller{
+//    self.searchDisplayController.searchBar.showsCancelButton = YES;
+//    UIButton *cancelButton;
+//    UIView *topView = self.searchDisplayController.searchBar.subviews[0];
+//    for (UIView *subView in topView.subviews)
+//    {
+//        if([subView isKindOfClass:(NSClassFromString(@"UINavigationButton"))])
+//        {
+//            cancelButton = (UIButton*)subView;
+//        }
+//    }
+//    if (cancelButton) {
+//        //Set the new title of the cancel button
+//        [cancelButton setTitle:@"Annuller"forState:UIControlStateNormal];
+//    }
+//}
 
 #pragma mark 添加搜索栏
 -(void)addSearchBar{
@@ -216,6 +233,7 @@
     [_searchBar sizeToFit];//大小自适应容器
     _searchBar.placeholder=@"Please input key word...";
     _searchBar.autocapitalizationType=UITextAutocapitalizationTypeNone;
+    _searchBar.tintColor = [UIColor whiteColor];//改变取消字体颜色
     _searchBar.showsCancelButton=YES;//显示取消按钮
     //添加搜索框到页眉位置
     _searchBar.delegate=self;

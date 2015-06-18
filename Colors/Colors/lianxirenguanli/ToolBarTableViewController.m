@@ -91,7 +91,7 @@
 #pragma mark 添加工具栏
 -(void)addToolbar{
     CGRect frame=self.view.frame;
-    _toolbar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 64, frame.size.width, kContactToolbarHeight)];
+    _toolbar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, kContactToolbarHeight)];
     //    _toolbar.backgroundColor=[UIColor colorWithHue:246/255.0 saturation:246/255.0 brightness:246/255.0 alpha:1];
     [self.view addSubview:_toolbar];
     UIBarButtonItem *removeButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(remove)];
@@ -103,9 +103,10 @@
 #pragma mark 删除
 -(void)remove{
     //直接通过下面的方法设置编辑状态没有动画
-    //_tableView.editing=!_tableView.isEditing;
+//    //_tableView.editing=!_tableView.isEditing;
     _isInsert=false;
     [_tableView setEditing:!_tableView.isEditing animated:true];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark 添加
 -(void)add{
@@ -158,7 +159,7 @@
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     KCContactGroup *group =_contacts[indexPath.section];
     KCContact *contact=group.contacts[indexPath.row];
-    if (editingStyle==UITableViewCellEditingStyleDelete) {
+    if (editingStyle==UITableViewCellEditingStyleDelete) {//删除
         [group.contacts removeObject:contact];
         //考虑到性能这里不建议使用reloadData
         //[tableView reloadData];
@@ -170,7 +171,7 @@
             [_contacts removeObject:group];
             [tableView reloadData];
         }
-    }else if(editingStyle==UITableViewCellEditingStyleInsert){
+    }else if(editingStyle==UITableViewCellEditingStyleInsert){//添加
         KCContact *newContact=[[KCContact alloc]init];
         newContact.firstName=@"first";
         newContact.lastName=@"last";
@@ -184,12 +185,12 @@
 //只要实现这个方法在编辑状态右侧就有排序图标
 -(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     KCContactGroup *sourceGroup =_contacts[sourceIndexPath.section];
-    KCContact *sourceContact=sourceGroup.contacts[sourceIndexPath.row];
-    KCContactGroup *destinationGroup =_contacts[destinationIndexPath.section];
+    KCContact *sourceContact=sourceGroup.contacts[sourceIndexPath.row];//源
+    KCContactGroup *destinationGroup =_contacts[destinationIndexPath.section];//目标组
     
-    [sourceGroup.contacts removeObject:sourceContact];
-    [destinationGroup.contacts insertObject:sourceContact atIndex:destinationIndexPath.row];
-    if(sourceGroup.contacts.count==0){
+    [sourceGroup.contacts removeObject:sourceContact];//移除
+    [destinationGroup.contacts insertObject:sourceContact atIndex:destinationIndexPath.row];//在那一行插入
+    if(sourceGroup.contacts.count==0){//如果没有数据
         [_contacts removeObject:sourceGroup];
         [tableView reloadData];
     }

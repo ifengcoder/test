@@ -15,6 +15,7 @@
 #import "ToolBarTableViewController.h" //toolbar
 #import "KCContactSearchViewController.h" //search
 #import "KCContactTableViewControllerWithUISearchDisplayControler.h" //search display
+#import "AnimationTextFieldControllerViewController.h"
 @interface UICommonListViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *tableList;
@@ -46,9 +47,9 @@
     UICommonModel *model3= [UICommonModel initWithTitle:@"toolbar" andDate:@"2015-06-17"];
     UICommonModel *model4 =[UICommonModel initWithTitle:@"search" andDate:@"2015-06-17"];
     UICommonModel *model5 =[UICommonModel initWithTitle:@"searchDisplay" andDate:@"2015-06-17"];
-
+    UICommonModel *model6 = [UICommonModel initWithTitle:@"animationField" andDate:@"2015-06-18"];
     UICommonListGroup *group1 = [UICommonListGroup initWithGroupName:@"UITableView" andDesc:@"布局" andCommonList:
-                                 [NSMutableArray arrayWithObjects:model1,model2,model3,model4,model5,nil ]];
+                                 [NSMutableArray arrayWithObjects:model1,model2,model3,model4,model5,model6, nil ]];
     [commonData addObject:group1];
     
 }
@@ -120,6 +121,11 @@
                     KCContactTableViewControllerWithUISearchDisplayControler * tool = [[KCContactTableViewControllerWithUISearchDisplayControler alloc] init];
                     [self.navigationController pushViewController:tool animated:YES];
                     break;
+                }
+                case 5:
+                {
+                    AnimationTextFieldControllerViewController * anima = [[AnimationTextFieldControllerViewController alloc] init];
+                    [self.navigationController pushViewController:anima animated:YES];
                 }
                 default:
                     break;

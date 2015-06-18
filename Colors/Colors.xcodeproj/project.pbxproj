@@ -25,6 +25,8 @@
 		B264B5B51B3022E60099E1F6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B41B3022E60099E1F6 /* FirstViewController.m */; };
 		B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B71B3022FF0099E1F6 /* SecondViewController.m */; };
 		B264B5BB1B30230F0099E1F6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */; };
+		B280A2031B32A4F000B77501 /* AnimationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B280A2021B32A4F000B77501 /* AnimationTextField.m */; };
+		B280A2061B32B64D00B77501 /* AnimationTextFieldControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280A2051B32B64D00B77501 /* AnimationTextFieldControllerViewController.m */; };
 		B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5AB1B310FDE00C55686 /* KCContact.m */; };
 		B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5AE1B3110C100C55686 /* KCContactGroup.m */; };
 		B2D5A5B21B31125200C55686 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5B11B31125200C55686 /* KCMainViewController.m */; };
@@ -73,6 +75,10 @@
 		B264B5B71B3022FF0099E1F6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B264B5B91B30230F0099E1F6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B280A2011B32A4F000B77501 /* AnimationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextField.h; sourceTree = "<group>"; };
+		B280A2021B32A4F000B77501 /* AnimationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextField.m; sourceTree = "<group>"; };
+		B280A2041B32B64D00B77501 /* AnimationTextFieldControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextFieldControllerViewController.h; sourceTree = "<group>"; };
+		B280A2051B32B64D00B77501 /* AnimationTextFieldControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextFieldControllerViewController.m; sourceTree = "<group>"; };
 		B2D5A5AA1B310FDE00C55686 /* KCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContact.h; sourceTree = "<group>"; };
 		B2D5A5AB1B310FDE00C55686 /* KCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContact.m; sourceTree = "<group>"; };
 		B2D5A5AD1B3110C100C55686 /* KCContactGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContactGroup.h; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		5F0B650F18A3A78800DFB3C1 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				B280A1FB1B326D3100B77501 /* AppDemo */,
 				B2D5A5C21B313E6A00C55686 /* Menu */,
 				B2D5A5C11B313E0800C55686 /* UIDemo */,
 				5F0B651818A3A78800DFB3C1 /* ICSAppDelegate.h */,
@@ -207,6 +214,32 @@
 			path = ../model;
 			sourceTree = "<group>";
 		};
+		B280A1FB1B326D3100B77501 /* AppDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B280A1FC1B326D6F00B77501 /* zhifubaodemo */,
+			);
+			path = AppDemo;
+			sourceTree = "<group>";
+		};
+		B280A1FC1B326D6F00B77501 /* zhifubaodemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = zhifubaodemo;
+			sourceTree = "<group>";
+		};
+		B280A2001B32A45400B77501 /* animationForTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B280A2011B32A4F000B77501 /* AnimationTextField.h */,
+				B280A2021B32A4F000B77501 /* AnimationTextField.m */,
+				B280A2041B32B64D00B77501 /* AnimationTextFieldControllerViewController.h */,
+				B280A2051B32B64D00B77501 /* AnimationTextFieldControllerViewController.m */,
+			);
+			path = animationForTextField;
+			sourceTree = "<group>";
+		};
 		B2D5A5A91B310F1000C55686 /* lianxirenguanli */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +263,7 @@
 		B2D5A5C11B313E0800C55686 /* UIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B280A2001B32A45400B77501 /* animationForTextField */,
 				B2D5A5CC1B31642F00C55686 /* sinademo1 */,
 				B2D5A5A91B310F1000C55686 /* lianxirenguanli */,
 				B2D5A5C31B313FDE00C55686 /* UICommonListViewController.h */,
@@ -336,6 +370,7 @@
 				B2D5A5C81B31401100C55686 /* UICommonModel.m in Sources */,
 				5F0B654718A3AD1C00DFB3C1 /* MenuViewController.m in Sources */,
 				B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */,
+				B280A2061B32B64D00B77501 /* AnimationTextFieldControllerViewController.m in Sources */,
 				B2D5A5D21B3165A600C55686 /* KCStatusTableViewCell.m in Sources */,
 				B2D5A5B21B31125200C55686 /* KCMainViewController.m in Sources */,
 				B264B5A51B2FFCD30099E1F6 /* RootViewController.m in Sources */,
@@ -352,6 +387,7 @@
 				B2D5A5DA1B3174E300C55686 /* ToolBarTableViewController.m in Sources */,
 				B2D5A5E01B317E0400C55686 /* KCContactSearchViewController.m in Sources */,
 				B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */,
+				B280A2031B32A4F000B77501 /* AnimationTextField.m in Sources */,
 				B2D5A5CB1B31403000C55686 /* UICommonListGroup.m in Sources */,
 				B2D5A5D51B31688500C55686 /* KCStatusViewController.m in Sources */,
 				B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */,
