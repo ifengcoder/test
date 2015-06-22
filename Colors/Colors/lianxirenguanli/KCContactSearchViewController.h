@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCContactSearchViewController : UITableViewController
+@interface KCContactSearchViewController : UIViewController
 
 @end
