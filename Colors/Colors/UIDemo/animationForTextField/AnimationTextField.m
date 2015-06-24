@@ -20,6 +20,7 @@
 @property(strong,nonatomic) UITextField *textFiled;
 
 @end
+
 @implementation AnimationTextField
 
 -(instancetype) initWithFrame:(CGRect)frame{

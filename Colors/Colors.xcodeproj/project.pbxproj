@@ -25,6 +25,10 @@
 		B264B5B51B3022E60099E1F6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B41B3022E60099E1F6 /* FirstViewController.m */; };
 		B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5B71B3022FF0099E1F6 /* SecondViewController.m */; };
 		B264B5BB1B30230F0099E1F6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */; };
+		B27843051B38F3FD00EBF4C5 /* wangyiMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27843041B38F3FD00EBF4C5 /* wangyiMainViewController.m */; };
+		B27843081B38F43D00EBF4C5 /* wangyiFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27843071B38F43D00EBF4C5 /* wangyiFirstViewController.m */; };
+		B278430B1B38F44E00EBF4C5 /* wangyiSecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B278430A1B38F44E00EBF4C5 /* wangyiSecordViewController.m */; };
+		B278430E1B38F45A00EBF4C5 /* wangyiThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B278430D1B38F45A00EBF4C5 /* wangyiThirdViewController.m */; };
 		B280A2031B32A4F000B77501 /* AnimationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B280A2021B32A4F000B77501 /* AnimationTextField.m */; };
 		B280A2061B32B64D00B77501 /* AnimationTextFieldControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280A2051B32B64D00B77501 /* AnimationTextFieldControllerViewController.m */; };
 		B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5A5AB1B310FDE00C55686 /* KCContact.m */; };
@@ -75,6 +79,14 @@
 		B264B5B71B3022FF0099E1F6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B264B5B91B30230F0099E1F6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B264B5BA1B30230F0099E1F6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B27843031B38F3FD00EBF4C5 /* wangyiMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wangyiMainViewController.h; sourceTree = "<group>"; };
+		B27843041B38F3FD00EBF4C5 /* wangyiMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wangyiMainViewController.m; sourceTree = "<group>"; };
+		B27843061B38F43D00EBF4C5 /* wangyiFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wangyiFirstViewController.h; sourceTree = "<group>"; };
+		B27843071B38F43D00EBF4C5 /* wangyiFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wangyiFirstViewController.m; sourceTree = "<group>"; };
+		B27843091B38F44E00EBF4C5 /* wangyiSecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wangyiSecordViewController.h; sourceTree = "<group>"; };
+		B278430A1B38F44E00EBF4C5 /* wangyiSecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wangyiSecordViewController.m; sourceTree = "<group>"; };
+		B278430C1B38F45A00EBF4C5 /* wangyiThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wangyiThirdViewController.h; sourceTree = "<group>"; };
+		B278430D1B38F45A00EBF4C5 /* wangyiThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wangyiThirdViewController.m; sourceTree = "<group>"; };
 		B280A2011B32A4F000B77501 /* AnimationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextField.h; sourceTree = "<group>"; };
 		B280A2021B32A4F000B77501 /* AnimationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextField.m; sourceTree = "<group>"; };
 		B280A2041B32B64D00B77501 /* AnimationTextFieldControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextFieldControllerViewController.h; sourceTree = "<group>"; };
@@ -214,9 +226,25 @@
 			path = ../model;
 			sourceTree = "<group>";
 		};
+		B27843021B38F3AC00EBF4C5 /* wangyidemo */ = {
+			isa = PBXGroup;
+			children = (
+				B27843031B38F3FD00EBF4C5 /* wangyiMainViewController.h */,
+				B27843041B38F3FD00EBF4C5 /* wangyiMainViewController.m */,
+				B27843061B38F43D00EBF4C5 /* wangyiFirstViewController.h */,
+				B27843071B38F43D00EBF4C5 /* wangyiFirstViewController.m */,
+				B27843091B38F44E00EBF4C5 /* wangyiSecordViewController.h */,
+				B278430A1B38F44E00EBF4C5 /* wangyiSecordViewController.m */,
+				B278430C1B38F45A00EBF4C5 /* wangyiThirdViewController.h */,
+				B278430D1B38F45A00EBF4C5 /* wangyiThirdViewController.m */,
+			);
+			path = wangyidemo;
+			sourceTree = "<group>";
+		};
 		B280A1FB1B326D3100B77501 /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B27843021B38F3AC00EBF4C5 /* wangyidemo */,
 				B280A1FC1B326D6F00B77501 /* zhifubaodemo */,
 			);
 			path = AppDemo;
@@ -383,16 +411,20 @@
 				B2D5A5C01B311BFF00C55686 /* ICSDropShadowView.m in Sources */,
 				B264B5B51B3022E60099E1F6 /* FirstViewController.m in Sources */,
 				B2D5A5DD1B317C9900C55686 /* KCContactTableViewControllerWithUISearchDisplayControler.m in Sources */,
+				B27843081B38F43D00EBF4C5 /* wangyiFirstViewController.m in Sources */,
 				B2D5A5CF1B31646A00C55686 /* KCStatus.m in Sources */,
 				B2D5A5DA1B3174E300C55686 /* ToolBarTableViewController.m in Sources */,
 				B2D5A5E01B317E0400C55686 /* KCContactSearchViewController.m in Sources */,
+				B278430B1B38F44E00EBF4C5 /* wangyiSecordViewController.m in Sources */,
 				B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */,
+				B27843051B38F3FD00EBF4C5 /* wangyiMainViewController.m in Sources */,
 				B280A2031B32A4F000B77501 /* AnimationTextField.m in Sources */,
 				B2D5A5CB1B31403000C55686 /* UICommonListGroup.m in Sources */,
 				B2D5A5D51B31688500C55686 /* KCStatusViewController.m in Sources */,
 				B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */,
 				B2D5A5BF1B311BFF00C55686 /* ICSDrawerController.m in Sources */,
 				B264B5A81B3005CD0099E1F6 /* MenuTableViewCell.m in Sources */,
+				B278430E1B38F45A00EBF4C5 /* wangyiThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
