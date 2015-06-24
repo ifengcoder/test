@@ -2,8 +2,7 @@
 //
 //  KCStatusTableViewCell.m
 //  Colors
-// Hi, 芳，虽然只与你见过两面，却深深的存在我的脑海里
-//   宁愿遗憾，不愿后悔，
+
 //  Created by Creditwe on 15/6/17.
 //  Copyright (c) 2015年 ice cream studios s.r.l. All rights reserved.
 
