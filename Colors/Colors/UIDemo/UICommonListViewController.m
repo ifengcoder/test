@@ -16,6 +16,9 @@
 #import "KCContactSearchViewController.h" //search
 #import "KCContactTableViewControllerWithUISearchDisplayControler.h" //search display
 #import "AnimationTextFieldControllerViewController.h"
+
+#import "NSThreadViewController.h"
+#import "NSThreadViewController1.h"
 @interface UICommonListViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *tableList;
@@ -48,8 +51,12 @@
     UICommonModel *model4 =[UICommonModel initWithTitle:@"search" andDate:@"2015-06-17"];
     UICommonModel *model5 =[UICommonModel initWithTitle:@"searchDisplay" andDate:@"2015-06-17"];
     UICommonModel *model6 = [UICommonModel initWithTitle:@"animationField" andDate:@"2015-06-18"];
+    UICommonModel *model7 = [UICommonModel initWithTitle:@"mutithread" andDate:@"2015-06-22"];
+    UICommonModel *model8 = [UICommonModel initWithTitle:@"mutithread1" andDate:@"2015-06-22"];
+
     UICommonListGroup *group1 = [UICommonListGroup initWithGroupName:@"UITableView" andDesc:@"布局" andCommonList:
-                                 [NSMutableArray arrayWithObjects:model1,model2,model3,model4,model5,model6, nil ]];
+                                 [NSMutableArray arrayWithObjects:model1,model2,model3,model4,model5,model6,
+                                  model7,model8,nil ]];
     [commonData addObject:group1];
     
 }
@@ -126,6 +133,18 @@
                 {
                     AnimationTextFieldControllerViewController * anima = [[AnimationTextFieldControllerViewController alloc] init];
                     [self.navigationController pushViewController:anima animated:YES];
+                    break;
+                }
+                case 6:
+                {
+                    NSThreadViewController * thread = [[NSThreadViewController alloc] init];
+                    [self.navigationController pushViewController:thread animated:YES];
+                    break;
+                }
+                case 7:
+                {
+                    NSThreadViewController1 * thread1 = [[NSThreadViewController1 alloc] init];
+                    [self.navigationController pushViewController:thread1 animated:YES];
                 }
                 default:
                     break;

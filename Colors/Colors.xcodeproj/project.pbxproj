@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153AA7171B37EDFE0007250B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA7161B37EDFE0007250B /* NSThreadViewController.m */; };
+		153AA71A1B37F9C60007250B /* ImageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA7191B37F9C60007250B /* ImageDataModel.m */; };
+		153AA71D1B37FEF10007250B /* NSThreadViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA71C1B37FEF10007250B /* NSThreadViewController1.m */; };
+		153AA7251B381D170007250B /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA7241B381D170007250B /* NSOperationViewController.m */; };
 		5F0B650A18A3A78800DFB3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0B650918A3A78800DFB3C1 /* Foundation.framework */; };
 		5F0B650C18A3A78800DFB3C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0B650B18A3A78800DFB3C1 /* CoreGraphics.framework */; };
 		5F0B650E18A3A78800DFB3C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0B650D18A3A78800DFB3C1 /* UIKit.framework */; };
@@ -45,6 +49,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153AA7151B37EDFE0007250B /* NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		153AA7161B37EDFE0007250B /* NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
+		153AA7181B37F9C60007250B /* ImageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDataModel.h; sourceTree = "<group>"; };
+		153AA7191B37F9C60007250B /* ImageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDataModel.m; sourceTree = "<group>"; };
+		153AA71B1B37FEF10007250B /* NSThreadViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController1.h; sourceTree = "<group>"; };
+		153AA71C1B37FEF10007250B /* NSThreadViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController1.m; sourceTree = "<group>"; };
+		153AA7231B381D170007250B /* NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		153AA7241B381D170007250B /* NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
 		5F0B650618A3A78800DFB3C1 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0B650918A3A78800DFB3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F0B650B18A3A78800DFB3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +136,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153AA7141B37ED720007250B /* MutiThread */ = {
+			isa = PBXGroup;
+			children = (
+				153AA7221B381CE70007250B /* NSOperation */,
+				153AA7151B37EDFE0007250B /* NSThreadViewController.h */,
+				153AA7161B37EDFE0007250B /* NSThreadViewController.m */,
+				153AA7181B37F9C60007250B /* ImageDataModel.h */,
+				153AA7191B37F9C60007250B /* ImageDataModel.m */,
+				153AA71B1B37FEF10007250B /* NSThreadViewController1.h */,
+				153AA71C1B37FEF10007250B /* NSThreadViewController1.m */,
+			);
+			path = MutiThread;
+			sourceTree = "<group>";
+		};
+		153AA7221B381CE70007250B /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				153AA7231B381D170007250B /* NSOperationViewController.h */,
+				153AA7241B381D170007250B /* NSOperationViewController.m */,
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
 		5F0B64FD18A3A78800DFB3C1 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +189,7 @@
 		5F0B650F18A3A78800DFB3C1 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				153AA7141B37ED720007250B /* MutiThread */,
 				B280A1FB1B326D3100B77501 /* AppDemo */,
 				B2D5A5C21B313E6A00C55686 /* Menu */,
 				B2D5A5C11B313E0800C55686 /* UIDemo */,
@@ -371,11 +407,14 @@
 				5F0B654718A3AD1C00DFB3C1 /* MenuViewController.m in Sources */,
 				B2D5A5AC1B310FDE00C55686 /* KCContact.m in Sources */,
 				B280A2061B32B64D00B77501 /* AnimationTextFieldControllerViewController.m in Sources */,
+				153AA7171B37EDFE0007250B /* NSThreadViewController.m in Sources */,
+				153AA71A1B37F9C60007250B /* ImageDataModel.m in Sources */,
 				B2D5A5D21B3165A600C55686 /* KCStatusTableViewCell.m in Sources */,
 				B2D5A5B21B31125200C55686 /* KCMainViewController.m in Sources */,
 				B264B5A51B2FFCD30099E1F6 /* RootViewController.m in Sources */,
 				B264B5BB1B30230F0099E1F6 /* ThirdViewController.m in Sources */,
 				5F0B654A18A3E2C600DFB3C1 /* ICSPlainColorViewController.m in Sources */,
+				153AA7251B381D170007250B /* NSOperationViewController.m in Sources */,
 				5F0B651A18A3A78800DFB3C1 /* ICSAppDelegate.m in Sources */,
 				B264B5AC1B300AB60099E1F6 /* MenuModel.m in Sources */,
 				5F0B651618A3A78800DFB3C1 /* main.m in Sources */,
@@ -389,6 +428,7 @@
 				B2D5A5AF1B3110C100C55686 /* KCContactGroup.m in Sources */,
 				B280A2031B32A4F000B77501 /* AnimationTextField.m in Sources */,
 				B2D5A5CB1B31403000C55686 /* UICommonListGroup.m in Sources */,
+				153AA71D1B37FEF10007250B /* NSThreadViewController1.m in Sources */,
 				B2D5A5D51B31688500C55686 /* KCStatusViewController.m in Sources */,
 				B264B5B81B3022FF0099E1F6 /* SecondViewController.m in Sources */,
 				B2D5A5BF1B311BFF00C55686 /* ICSDrawerController.m in Sources */,
